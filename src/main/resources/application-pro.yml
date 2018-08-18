@@ -1,5 +1,5 @@
 server:
-    port: 8001
+    port: 8003
 #    ssl:
 #        key-store: classpath:${server.ssl.store-name}
 #        key-store-password: czd102930
@@ -7,7 +7,7 @@ server:
 https:
     classname: edu.ccmmxj.club.jks
     password: 9899872k7g4h0
-    port: 8443
+    port: 8442
     ssl:
         key-store: classpath:${https.classname}
         key-store-password: ${https.password}
