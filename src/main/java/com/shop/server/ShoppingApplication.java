@@ -79,7 +79,7 @@ public class ShoppingApplication extends SpringBootServletInitializer {
 		Http11NioProtocol protocol = (Http11NioProtocol) connector.getProtocolHandler();
 		try {
 //			File keystore = new ClassPathResource("mykeys.jks").getFile();
-			File keystore = Context.getHttpsFile("mykeys.jks");
+			File keystore = Context.getHttpsFile("edu.ccmmxj.club.jks");
             /*File truststore = new ClassPathResource("sample.jks").getFile();*/
 			connector.setScheme("https");
 			connector.setSecure(true);
