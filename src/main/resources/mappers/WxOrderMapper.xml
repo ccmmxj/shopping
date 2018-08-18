@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.server.mapper.WxOrderMapper">
+  <resultMap id="BaseResultMap" type="com.shop.server.model.WxOrder">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="is_deleted" jdbcType="TINYINT" property="isDeleted" />
+    <result column="gmt_created" jdbcType="VARCHAR" property="gmtCreated" />
+    <result column="gmt_modified" jdbcType="VARCHAR" property="gmtModified" />
+    <result column="company_id" jdbcType="BIGINT" property="companyId" />
+    <result column="oid" jdbcType="VARCHAR" property="oid" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="receiver" jdbcType="VARCHAR" property="receiver" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="mark" jdbcType="VARCHAR" property="mark" />
+    <result column="total" jdbcType="DECIMAL" property="total" />
+  </resultMap>
+</mapper>

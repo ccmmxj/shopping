@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.server.mapper.WxOrderProductMapper">
+  <resultMap id="BaseResultMap" type="com.shop.server.model.WxOrderProduct">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="is_deleted" jdbcType="TINYINT" property="isDeleted" />
+    <result column="gmt_created" jdbcType="TIMESTAMP" property="gmtCreated" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="product_id" jdbcType="BIGINT" property="productId" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="cost" jdbcType="DECIMAL" property="cost" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+  </resultMap>
+</mapper>

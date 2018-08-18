@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.server.mapper.ManageCompanyMapper">
+  <resultMap id="BaseResultMap" type="com.shop.server.model.ManageCompany">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="gmt_created" jdbcType="TIMESTAMP" property="gmtCreated" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="is_deleted" jdbcType="TINYINT" property="isDeleted" />
+    <result column="wx_app_id" jdbcType="VARCHAR" property="wxAppId" />
+    <result column="wx_app_secret" jdbcType="VARCHAR" property="wxAppSecret" />
+  </resultMap>
+</mapper>

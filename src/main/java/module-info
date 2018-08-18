@@ -1,0 +1,29 @@
+/**
+ *  test
+ */
+module shopping{
+    requires jdk.incubator.httpclient;
+    requires persistence.api;
+    requires spring.web;
+    requires slf4j.api;
+    requires spring.context;
+    requires spring.security.core;
+    requires aspectjweaver;
+    requires tomcat.embed.core;
+    requires spring.core;
+    requires spring.security.web;
+    requires com.fasterxml.jackson.databind;
+    requires mybatis;
+    requires spring.beans;
+    requires fastjson;
+//    requires mapper.core;
+    requires mapper.base;
+    requires mapper.spring;
+    requires spring.boot;
+    requires spring.cloud.commons;
+    requires spring.cloud.netflix.zuul;
+    requires spring.cloud.openfeign.core;
+    requires spring.webmvc;
+    requires spring.boot.autoconfigure;
+    exports com.shop.server.controller;
+}

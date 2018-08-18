@@ -1,0 +1,22 @@
+spring:
+    application:
+      name: shopping
+    profiles:
+      active: dev
+    http:
+        encoding:
+            charset: utf-8
+#pagehelper分页插件
+pagehelper:
+    helperDialect: mysql
+    reasonable: false
+    supportMethodsArguments: true
+    params: count=countSql
+mybatis:
+    type-aliases-package: com.shop.server.model
+    mapper-locations: classpath:mappers/*.xml
+    config-location:  classpath:mybatis/mybatis-config.xml
+mapper:
+    mappers: com.shop.server.tkmapper.BaseMapper
+    not-empty: false
+    identity: MYSQL
