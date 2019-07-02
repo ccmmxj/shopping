@@ -6,7 +6,7 @@ server:
 #        store-name: linux.jks
 https:
     classname: edu.ccmmxj.club.jks
-    password: 9899872k7g4h0
+    password: n4r661s3v190r3
     port: 8442
     ssl:
         key-store: classpath:${https.classname}
